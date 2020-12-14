@@ -10,7 +10,7 @@ module.exports = {
         let RegMention = new RegExp(`^<@!?${client.user.id}>( |)$`); 
         //MENSAJE
         const emb = new MessageEmbed()
-        .setDescription('mi prefix es ?')
+        .setDescription('mi prefix es tl?')
         //enviar mensaje
         if(message.content.match(RegMention))return message.channel.send(emb)
         //ARGS

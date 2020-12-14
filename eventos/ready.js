@@ -15,7 +15,7 @@ const estados = [
         tipo: "LISTENING"
     },
     {
-        mensaje: "mi prefix ?",
+        mensaje: "mi prefix tl!",
         tipo: "LISTENING"
     }
 ]
