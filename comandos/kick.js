@@ -2,7 +2,7 @@
 
 
 module.exports = {
-    nombre: "kick",
+    nombre: "kicksss",
     alias: [],
     run: async (client, message, args) => {
         if (!message.guild) return;
