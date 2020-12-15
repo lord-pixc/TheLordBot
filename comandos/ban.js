@@ -4,7 +4,6 @@ module.exports = {
     run: async (client, message, args) => {
         if (!message.guild) return;
         const user = message.mentions.users.first();
-        if (message.guild.member(message.author).hasPermission('BAN_MEMBERS')){ return 'No tienes permisos';}
         if (user) {
           const member = message.guild.member(user);
           if (member) {  
@@ -12,21 +11,22 @@ module.exports = {
               .ban({
                 reason: 'Desiciones del staff',
               })
-              .has({
-                permission: ('BAN_MEMBERS')
-              })
+              .has(
+                'BAN_MEMBERS',
+                message.reply('No tienes permisos')
+              )
               .then(() => {
                 message.reply(`A sido baneado ${user.tag}`);
               })
               .catch(err => {
-                message.reply('No puedo banearle');
+                message.reply('No puedo banearle');S
                 console.error(err);
               });
           } else {
             message.reply("No exixte tal persona");
           }
         } else {
-          message.reply("Menciona a alguien para banear");
+          message.reply("Menciona a alguien para banear")
         }
     }
 }
