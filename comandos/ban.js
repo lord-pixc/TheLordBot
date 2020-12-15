@@ -6,7 +6,7 @@ module.exports = {
         const user = message.mentions.users.first();
         if (user) {
           const member = message.guild.member(user);
-          if(message.member.hasPermissions('BAN_MEMBERS')){return }
+          if(!message.member.hasPermissions('BAN_MEMBERS')){return }
           if (member) {  
             member
               .ban({
