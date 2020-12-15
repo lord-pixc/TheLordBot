@@ -1,6 +1,3 @@
-
-
-
 module.exports = {
     nombre: "kick",
     alias: [],
@@ -12,6 +9,10 @@ module.exports = {
             if (member) {
               member
                 .kick('Por listo')
+                .has(
+                  ('KICK_MEMBERS'),
+                  message.reply('No tienes permisos')
+                )
                 .then(() => {
                   message.channel.send(`se a kickeado a ${user.tag}`);
                 })
