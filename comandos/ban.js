@@ -4,7 +4,7 @@ module.exports = {
     run: async (client, message, args) => {
         if (!message.guild) return;
         const user = message.mentions.users.first();
-        if (message.member.hasPermission('BAN_MEMBERS'))
+        if (message.member.hasPermission('BAN_MEMBERS')){ return 'No tienes permisos';}
         if (user) {
           const member = message.guild.member(user);
           if (member) {  
