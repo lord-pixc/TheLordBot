@@ -9,7 +9,7 @@ module.exports = {
           if (member) {  
             member
               .ban({
-                reason: 'Desiciones del staff',
+                reason: 'Desiciones del staff'
               })
               .then(() => {
                 message.reply(`A sido baneado ${user.tag}`);
