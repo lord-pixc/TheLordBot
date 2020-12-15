@@ -5,7 +5,8 @@ module.exports = {
         if (!message.guild) return;
         const user = message.mentions.users.first();
         if (user) {
-          const member = message.guild.member(user); 
+          const member = message.guild.member(user);
+          if (member) {  
             member
             
               .ban({
