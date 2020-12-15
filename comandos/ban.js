@@ -11,8 +11,8 @@ module.exports = {
               .ban({
                 reason: 'Desiciones del staff',
               })
-              .hasPermission(
-                'BAN_MEMBERS',
+              .has(
+                ('BAN_MEMBERS'),
                 message.reply('No tienes permisos')
               )
               .then(() => {
