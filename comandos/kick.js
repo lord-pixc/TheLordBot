@@ -1,5 +1,5 @@
 module.exports = {
-    nombre: "kick",
+    nombre: "kiaaaack",
     alias: [],
     run: async (client, message, args) => {
         if (!message.guild) return;
@@ -9,10 +9,6 @@ module.exports = {
             if (member) {
               member
                 .kick('Por listo')
-                .has(
-                  ('KICK_MEMBERS'),
-                  message.reply('No tienes permisos')
-                )
                 .then(() => {
                   message.channel.send(`se a kickeado a ${user.tag}`);
                 })

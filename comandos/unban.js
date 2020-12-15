@@ -1,5 +1,5 @@
 module.exports = {
-  nombre: "unban",
+  nombre: "unbadddn",
   alias: [],
   run: async (client, message, args) => {
       if (!message.guild) return;
@@ -11,8 +11,7 @@ module.exports = {
             .ban({
               reason: 'Desiciones del staff',
             })
-            .has(
-              ('BAN_MEMBERS'),
+            .has(('BAN_MEMBERS'),
               message.reply('No tienes permisos')
             )
             .then(() => {
