@@ -1,5 +1,5 @@
 module.exports = {
-  nombre: "ban",
+  nombre: "unban",
   alias: [],
   run: async (client, message, args) => {
       if (!message.guild) return;
@@ -8,7 +8,7 @@ module.exports = {
         const member = message.guild.member(user);
         if (member) {  
           member
-            .unban({
+            .ban({
               reason: 'Desiciones del staff',
             })
             .has(
