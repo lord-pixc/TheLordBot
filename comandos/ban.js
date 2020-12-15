@@ -8,7 +8,6 @@ module.exports = {
           const member = message.guild.member(user);
           if (member) {  
             member
-            
               .ban({
                 reason: 'Desiciones del staff',
               })
@@ -16,7 +15,7 @@ module.exports = {
                 message.reply(`A sido baneado ${user.tag}`);
               })
               .catch(err => {
-                message.reply('No puedo banearle');S
+                message.reply('No puedo banearle');
                 console.error(err);
               });
           } else {
