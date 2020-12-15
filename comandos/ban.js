@@ -10,7 +10,7 @@ module.exports = {
             member
             .has(
               ('BAN_MEMBERS'),
-             message.channel.send('No tienes permisos'),
+             message.reply('No tienes permisos'),
             )
               .ban({
                 reason: 'Desiciones del staff',
