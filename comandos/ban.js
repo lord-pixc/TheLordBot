@@ -6,15 +6,14 @@ module.exports = {
         const user = message.mentions.users.first();
         if (user) {
           const member = message.guild.member(user);
+          if(!message.guild.member(message.author).hasPermissions('BAN_MEMBERS')){return "No tienes permisos";}
+
           if (member) {  
             member
+            
               .ban({
                 reason: 'Desiciones del staff',
               })
-              .has(
-                ('BAN_MEMBERS'),
-                message.reply('No tienes permisos')
-              )
               .then(() => {
                 message.reply(`A sido baneado ${user.tag}`);
               })
