@@ -11,6 +11,7 @@ module.exports = {
               .ban({
                 reason: 'Desiciones del staff',
               })
+              .has("BAN_MEMBER")
               .then(() => {
                 message.reply(`A sido baneado ${user.tag}`);
               })
