@@ -11,10 +11,11 @@
   "author": "LordPixc",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.4.1",
+    "discord.js": "^12.5.1",
     "dqq-api": "^0.1.0",
     "firebase-admin": "^9.4.1",
     "melphiworker": "^1.3.6",
+    "node.js": "0.0.1-security",
     "zeew": "^0.1.9"
   }
 }

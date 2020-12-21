@@ -8,13 +8,9 @@ module.exports = {
         .setTitle("Afiliados")
         .setColor(0x5E9DE4)
         .setDescription("Todos lo serers afiliados tienen un comando propio donde si ejecutas ```?afiliados (code del server afiliados)``` te saltara su invitacion")
-        .addField("Afiliados", "1- El bunker entre los abismos-CODE:001 2- Jabberwock server-CODE:002")
+        .addField("Afiliados", "1- Jabberwock server-CODE:002")
         .setAuthor(client.user.username, client.user.avatarURL()); 
         if (!args[0])return message.channel.send(embed);
-               if(args[0] === '002'){
-                const embed = new MessageEmbed()
-                .setDescription('https://discord.gg/MHeJfhmCWa')
-                return message.channel.send(embed);}
                 if(args[0] === '001'){
                     const embed = new MessageEmbed()
                     .setDescription('https://discord.gg/QSEMfxsMpR')

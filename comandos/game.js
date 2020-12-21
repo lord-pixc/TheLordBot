@@ -1,6 +1,8 @@
 const { MessageEmbed } = require("discord.js");
 const admin = require('firebase-admin');
 const db = admin.database();
+const package = require('../package.json')
+
 module.exports = {
     nombre: "game",
     alias: ["games"],
@@ -23,7 +25,8 @@ module.exports = {
             .addField("Subido por", consulta.val().usuario.nombre, true)
             .setThumbnail(consulta.val().imagen)
             .setImage(consulta.val().captura)
-            .setAuthor(client.user.username, client.user.avatarURL());
+            .setAuthor(client.user.username, client.user.avatarURL())
+            .setFooter(`TheLordBot ${package.version}`, client.user.avatarURL());
         message.channel.send(embed);
     }
 }
