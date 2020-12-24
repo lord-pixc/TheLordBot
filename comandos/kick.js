@@ -1,5 +1,5 @@
 module.exports = {
-    nombre: "kiaaaack",
+    nombre: "kickmantenimiento",
     alias: [],
     run: async (client, message, args) => {
         if (!message.guild) return;

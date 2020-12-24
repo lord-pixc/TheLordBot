@@ -6,6 +6,8 @@ const package = require('../package.json')
 module.exports = {
     nombre: "game",
     alias: ["games"],
+    alias: ["juego"],
+    alias: ["juegos"],
     run: async (client, message, args) => {
         //validar si ingresó un juego
         if (args.length == 0) return message.channel.send("Escribe el juego que desees buscar, Ejemplo ```?game <NOMBRE DEL JUEGO>```")

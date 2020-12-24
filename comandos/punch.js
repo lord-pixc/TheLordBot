@@ -2,7 +2,7 @@ const { MessageEmbed } = require("discord.js");
 const Zeew = require("zeew");
 const sfw = new Zeew.sfw("fbd597f5557800e8912e4fb");
 module.exports = {
-    nombre: "punch",
+    nombre: "punchmantenimiento",
     alias: ['puñetaso'],
     run: async (client, message, args) => {
         const user = message.mentions.users.first();
