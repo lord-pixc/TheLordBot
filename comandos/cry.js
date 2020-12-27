@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js");
+/*const { MessageEmbed } = require("discord.js");
 const admin = require('firebase-admin');
 const nd = admin.firestore();
 const package = require('../package.json')
@@ -24,4 +24,4 @@ module.exports = {
             .setFooter(`TheLordBot ${package.version}`, client.user.avatarURL());
         message.channel.send(embed);
     }
-}
+}*/
