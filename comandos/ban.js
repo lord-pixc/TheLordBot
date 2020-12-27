@@ -9,10 +9,6 @@ module.exports = {
           const member = message.guild.member(user);
           if (member) {  
             member
-            .has(
-              ('BAN_MEMBERS'),
-             message.reply('No tienes permisos'),
-            )
               .ban({
                 reason: 'Desiciones del staff',
               })
