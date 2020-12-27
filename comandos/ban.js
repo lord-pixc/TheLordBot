@@ -2,6 +2,7 @@ module.exports = {
     nombre: "banmantenimiento",
     alias: [],
     run: async (client, message, args) => {
+      if (!message.member.hasPermission("ADMINISTRATOR" )) return;
         if (!message.guild) return;
         const user = message.mentions.users.first();
         if (user) {
