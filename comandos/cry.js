@@ -1,6 +1,6 @@
-/*const { MessageEmbed } = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 const admin = require('firebase-admin');
-const nd = admin.firestore();
+const bd = admin.firestore();
 const package = require('../package.json')
 
 module.exports = {
@@ -9,19 +9,17 @@ module.exports = {
     alias: ["llorar"],
     alias: ["cryes"],
     run: async (client, message, args) => {
-        //obtenemos el gif de la base de datos
-        const juego = args.join("").toLowerCase();
-        const consulta = await bd.collection(`cry`)
-        .whereField("random": isGreaterThanOrEqualTo: random).order(by: "random").limit(to, 1)
-        //validar si existe
-        if (!consulta.val()) return message.channel.send("")
+        //obtenemos el array de cry
+        const gifs = client.sfw.get("cry");
+        //obtenemos un gif aleatorio
+        const gif = gifs[Math.floor(Math.random() * gis.length)];
         //crear el embed
         const embed = new MessageEmbed()            
-            .setColor(0x0041EE)
-            .setDescription(`${message.member}`, 'llora', user.username)
-            .setImage(consulta.val().cry)
-            .setAuthor(client.user.username, client.user.avatarURL())
-            .setFooter(`TheLordBot ${package.version}`, client.user.avatarURL());
-        message.channel.send(embed);
+            .setColor(0x0041EE)//estalecemos el color
+            .setDescription(`${message.member}`, 'llora', user.username)//estalecemos la descripción
+            .setImage(gif)//estalecemos el gif
+            .setAuthor(client.user.username, client.user.avatarURL())//estalecemos el autor
+            .setFooter(`TheLordBot ${package.version}`, client.user.avatarURL());//estalecemos el footer
+        message.channel.send(embed);//se envia el embed
     }
-}*/
+}

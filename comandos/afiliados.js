@@ -8,7 +8,7 @@ module.exports = {
         .setTitle("Afiliados")
         .setColor(0x5E9DE4)
         .setDescription("Todos lo serers afiliados tienen un comando propio donde si ejecutas ```?afiliados (code del server afiliados)``` te saltara su invitacion")
-        .addField("Afiliados", "1- Jabberwock server-CODE:002")
+        .addField("Afiliados", "1- Jabberwock server-CODE:001")
         .setAuthor(client.user.username, client.user.avatarURL()); 
         if (!args[0])return message.channel.send(embed);
                 if(args[0] === '001'){

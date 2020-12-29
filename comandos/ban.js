@@ -17,7 +17,7 @@ module.exports = {
                 message.reply(`A sido baneado ${user.tag}`);
               })
               .catch(err => {
-                message.reply('No puedo banearle');S
+                message.reply('No puedo banearle');
                 console.error(err);
               });
           } else {

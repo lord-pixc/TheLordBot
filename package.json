@@ -11,7 +11,9 @@
   "author": "LordPixc",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
     "dqq-api": "^0.1.0",
     "firebase-admin": "^9.4.1",
     "melphiworker": "^1.3.6",
