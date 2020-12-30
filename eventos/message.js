@@ -10,12 +10,14 @@ module.exports = {
         if(!client.servidores.get(message.guild.id)){
             // creamos la configuración inicial por defecto
             config = {
-                prefix: "tl!"
+                prefix: "tl!",
+                name: message.guild.name
             };
             // lo registramos en la base de datos
-            db.ref(`servidores/${message.gild.id}`).set(config);
+            db.ref(`servidores/${message.guild.id}`).set(config);
             // lo subimos al cliente
             client.servidores.set(message.guild.id, config);
+            console.log('\x1b[34m%s\x1b[0m', 'Servidor', message.guild.name, '\x1b[34mcargado en el cliente correctamente');
         } else {
             // obtiene el prefix del servidor
             const prefix = client.servidores.get(message.guild.id).prefix; 
