@@ -1,4 +1,4 @@
-const {MessageEmbed} = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const package = require('../package.json');
 var admin = require("firebase-admin");
 const db = admin.database();

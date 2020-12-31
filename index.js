@@ -41,7 +41,7 @@ db.ref(`servidores`).once('value').then( snapshot => {
         //cargamos la configuración
         client.servidores.set(servidor, obj);
         //log
-        console.log('\x1b[34m%s\x1b[0m', 'Servidor', servidores[servidor].Nombre, '\x1b[34mcargado en el cliente correctamente');
+        console.log('\x1b[34m%s\x1b[0m', 'Servidor', servidores[servidor].name, '\x1b[34mcargado en el cliente correctamente');
     }
 });
 

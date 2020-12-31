@@ -5,18 +5,16 @@ const package = require('../package.json')
 
 module.exports = {
     nombre: "cry",
-    alias: ["llora"],
-    alias: ["llorar"],
-    alias: ["cryes"],
+    alias: ["llora", "llorar", "cryes"],
     run: async (client, message, args) => {
         //obtenemos el array de cry
         const gifs = client.sfw.get("cry");
         //obtenemos un gif aleatorio
-        const gif = gifs[Math.floor(Math.random() * gis.length)];
+        const gif = gifs[Math.floor(Math.random() * gifs.length)];
         //crear el embed
         const embed = new MessageEmbed()            
             .setColor(0x0041EE)//estalecemos el color
-            .setDescription(`${message.member}`, 'llora', user.username)//estalecemos la descripción
+            .setDescription(`${message.member} llora`)//estalecemos la descripción
             .setImage(gif)//estalecemos el gif
             .setAuthor(client.user.username, client.user.avatarURL())//estalecemos el autor
             .setFooter(`TheLordBot ${package.version}`, client.user.avatarURL());//estalecemos el footer
