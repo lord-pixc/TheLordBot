@@ -5,10 +5,9 @@ const package = require('../package.json')
 
 module.exports = {
     nombre: "hug",
-    alias: ["abraza"],
-    alias: ["abrazar"],
+    alias: ["abraza, abrazar, abrazo"],
     run: async (client, message, args) => {
-        //obtenemos el array de cry
+        //obtenemos el array de hug
         const gifs = client.sfw.get("hug");
         //obtenemos un gif aleatorio
         const gif = gifs[Math.floor(Math.random() * gis.length)];

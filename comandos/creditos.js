@@ -7,7 +7,7 @@ module.exports = {
             const embed = new MessageEmbed()
                .setTitle("Comandos")
                .setColor(0x5E9DE4)
-               .setDescription("Todos los comandos deben llevar el prefix 'th?'")
+               .setDescription("Todos los comandos deben llevar el prefix 'tl!'")
                .addField("Dueños", "LORDPIXC", "Eli Maciel")
                .addField("Colaboradores", "Toastcode, Mr.Bug ")
                .setAuthor(client.user.username, client.user.avatarURL());
