@@ -8,8 +8,8 @@ module.exports = {
                .setTitle("Comandos")
                .setColor(0x5E9DE4)
                .setDescription("Todos los comandos deben llevar el prefix 'th?'")
-               .addField("Dueños", "LORDPIXC")
-               .addField("Colaboradores", "Toastcode, Eli Maciel, Mr.Bug ")
+               .addField("Dueños", "LORDPIXC", "Eli Maciel")
+               .addField("Colaboradores", "Toastcode, Mr.Bug ")
                .setAuthor(client.user.username, client.user.avatarURL());
            message.channel.send(embed);
         }

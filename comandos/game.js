@@ -10,7 +10,7 @@ module.exports = {
     alias: ["juegos"],
     run: async (client, message, args) => {
         //validar si ingresó un juego
-        if (args.length == 0) return message.channel.send("Escribe el juego que desees buscar, Ejemplo ```?game <NOMBRE DEL JUEGO>```")
+        if (args.length == 0) return message.channel.send("Escribe el juego que desees buscar, Ejemplo ``tl!game <NOMBRE DEL JUEGO>``")
         //obtenemos el juego de la base de datos
         const juego = args.join("").toLowerCase();
         const consulta = await db.ref(`Juegos/${juego}`).once('value');

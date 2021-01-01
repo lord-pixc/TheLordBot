@@ -8,9 +8,9 @@ module.exports = {
                .setTitle("Comandos")
                .setColor(0x5E9DE4)
                .setDescription("Todos los comandos deben llevar el prefix '?'")
-               .addField("Informacion", "Info, creditos, afiliados, avatar,  servers, game")
-               .addField("Utiles", "invite, ban, kick, ping")
-               .addField("Entretenimiento", "meme")
+               .addField("Informacion", "creditos, afiliados, avatar,  servers, game")
+               .addField("Utiles", "invite, ping")
+               .addField("Entretenimiento", "meme, cry")
                .setAuthor(client.user.username, client.user.avatarURL());
            message.channel.send(embed);
         }
