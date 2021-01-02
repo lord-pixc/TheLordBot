@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 const admin = require('firebase-admin');
 const bd = admin.firestore();
 const package = require('../package.json')
@@ -24,6 +24,5 @@ module.exports = {
             client.channels.cache.get('795025963406458900').send(`Error en **"afiliados"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
             console.log(error);
         }
-        
     }
 }

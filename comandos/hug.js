@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js");
+const {MessageEmbed} = require("discord.js");
 const admin = require('firebase-admin');
 const bd = admin.firestore();
 const package = require('../package.json')
@@ -12,7 +12,7 @@ module.exports = {
         //obtenemos un gif aleatorio
         const gif = gifs[Math.floor(Math.random() * gis.length)];
         //crear el embed
-        const embed = new MessageEmbed()            
+        const embed = new MessageEmbed()
             .setColor(0x0041EE)//estalecemos el color
             .setDescription(`${message.member}`, 'abraza a', user.username)//estalecemos la descripción
             .setImage(gif)//estalecemos el gif

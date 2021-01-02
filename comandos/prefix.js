@@ -13,6 +13,5 @@ module.exports = {
             client.channels.cache.get('795025963406458900').send(`Error en **"prefix"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
             console.log(error);
         }
-        
     }
 }

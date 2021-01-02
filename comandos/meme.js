@@ -6,11 +6,10 @@ module.exports = {
     run: async (client, message, args) => {
         try {
             let memes = await melphiworker.memes()
-            message.channel.send({files: [ memes ]})
+            message.channel.send({files: [memes]})
         } catch (error) {
             client.channels.cache.get('795025963406458900').send(`Error en **"meme"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
             console.log(error);
         }
-        
     }
 }
