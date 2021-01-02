@@ -9,7 +9,7 @@ module.exports = {
     run: async (client, message, args) => {
         try {
 //validar si ingresó un juego
-            if (args.length == 0) return message.channel.send("Escribe el juego que desees buscar, Ejemplo ```?game <NOMBRE DEL JUEGO>```")
+            if (args.length == 0) return message.channel.send("Escribe el juego que desees buscar, Ejemplo `tl!game <NOMBRE DEL JUEGO>`")
             //obtenemos el juego de la base de datos
             const juego = args.join("").toLowerCase();
             const consulta = await db.ref(`Juegos/${juego}`).once('value');
@@ -30,9 +30,8 @@ module.exports = {
                 .setFooter(`TheLordBot ${package.version}`, client.user.avatarURL());
             message.channel.send(embed);
         } catch (error) {
-            client.channels.cache.get('795025963406458900').send(`Error en **"afiliados"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
+            client.channels.cache.get('795025963406458900').send(`Error en **"game"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
             console.log(error);
         }
-        
     }
 }
