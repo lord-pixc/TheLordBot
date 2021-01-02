@@ -2,6 +2,12 @@ module.exports = {
     nombre: "ping",
     alias: [],
     run: async (client, message, args) => {
-        message.channel.send("pong!");
+        try {
+            message.channel.send("pong!");
+        } catch (error) {
+            client.channels.cache.get('795025963406458900').send(`Error en **"ping"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
+            console.log(error);
+        }
+        
     }
 }
