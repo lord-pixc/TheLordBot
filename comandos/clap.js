@@ -1,5 +1,3 @@
-const { MessageEmbed } = require("discord.js");
-const admin = require('firebase-admin');
 const {MessageEmbed} = require("discord.js");
 const admin = require('firebase-admin');
 const bd = admin.firestore();
