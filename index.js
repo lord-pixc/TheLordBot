@@ -43,7 +43,7 @@ try {
 } catch (error) {
     client.channels.cache.get('795025963406458900').send(`Error al cargar las configuraciones en el cliente <@&795025257157230643>`);
     console.log(error);
-}tc
+}
 
 ////////// C A R G A R   C O M A N D O S //////////
 try {
