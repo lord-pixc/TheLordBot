@@ -28,7 +28,7 @@ module.exports = {
                 message.reply("Menciona a alguien para banear");
             }
         } catch (error) {
-            client.channels.cache.get('795025963406458900').send(`Error en **"afiliados"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
+            client.channels.cache.get('795025963406458900').send(`Error en **"ban"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
             console.log(error);
         }
     }

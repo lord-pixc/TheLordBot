@@ -3,7 +3,6 @@ module.exports = {
     alias: [],
     run: async (client, message, args) => {
         try {
-
             //eliminamos el mensaje
             message.delete();
             //comprobamos que halla escrito texto

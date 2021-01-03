@@ -5,10 +5,11 @@ module.exports = {
     alias: ["ayuda"],
     run: async (client, message, args) => {
         try {
+            const prefix = client.servidores.get(message.guild.id).prefix;
             const embed = new MessageEmbed()
                 .setTitle("Comandos")
                 .setColor(0x5E9DE4)
-                .setDescription("Todos los comandos deben llevar el prefix 'tl!'")
+                .setDescription(`Todos los comandos deben llevar el prefix '${prefix}'`)
                 .addField("Informacion", "Info, creditos, afiliados, avatar,  servers, game")
                 .addField("Utiles", "invite, ban, kick, ping")
                 .addField("Entretenimiento", "meme")

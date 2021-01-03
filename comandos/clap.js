@@ -8,7 +8,7 @@ module.exports = {
     alias: ["aplaudir", "aplauso", "claps"],
     run: async (client, message, args) => {
         try {
-//obtenemos el array de cry
+            //obtenemos el array de cry
             const gifs = client.sfw.get("claps");
             //obtenemos un gif aleatorio
             const gif = gifs[Math.floor(Math.random() * gifs.length)];
@@ -21,7 +21,7 @@ module.exports = {
                 .setFooter(`TheLordBot ${package.version}`, client.user.avatarURL());//estalecemos el footer
             message.channel.send(embed);//se envia el embed
         } catch (error) {
-            client.channels.cache.get('795025963406458900').send(`Error en **"afiliados"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
+            client.channels.cache.get('795025963406458900').send(`Error en **"clap"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
             console.log(error);
         }
     }

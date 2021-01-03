@@ -22,18 +22,9 @@ const db = admin.database();
 
 //Cargar SFW
 (async function(){
-    const snapshot = (await bd.collection('sfw').doc('cry').get()).data().gif;
-    client.sfw.set("cry", snapshot);
-    // const snapshot = (await bd.collection('sfw').doc('cry').get()).data().gif;
-    // client.sfw.set("cry", snapshot);
+    
 })();
 
-(async function(){
-    const snapshot = (await bd.collection('sfw').doc('claps').get()).data().gif;
-    client.sfw.set("claps", snapshot);
-    // const snapshot = (await bd.collection('sfw').doc('cry').get()).data().gif;
-    // client.sfw.set("cry", snapshot);
-})();
 //cargar las configuraciones en el cliente
 db.ref(`servidores`).once('value').then( snapshot => {
     //obtenemos la base de datos

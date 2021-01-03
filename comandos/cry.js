@@ -21,7 +21,7 @@ module.exports = {
                 .setFooter(`TheLordBot ${package.version}`, client.user.avatarURL());//estalecemos el footer
             message.channel.send(embed);//se envia el embed
         } catch (error) {
-            client.channels.cache.get('795025963406458900').send(`Error en **"afiliados"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
+            client.channels.cache.get('795025963406458900').send(`Error en **"cry"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
             console.log(error);
         }
     }

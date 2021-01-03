@@ -8,7 +8,7 @@ module.exports = {
     alias: ["games", "juegos", "juego"],
     run: async (client, message, args) => {
         try {
-//validar si ingresó un juego
+            //validar si ingresó un juego
             if (args.length == 0) return message.channel.send("Escribe el juego que desees buscar, Ejemplo `tl!game <NOMBRE DEL JUEGO>`")
             //obtenemos el juego de la base de datos
             const juego = args.join("").toLowerCase();
