@@ -5,6 +5,7 @@ module.exports = {
     alias: ["prefijo"],
     run: async (client, message, args) => {
         try {
+            console.log("s")
             if (!args[0]) return message.channel.send("Incluya el nuevo prefijo");
             db.ref(`servidores/${message.guild.id}/prefix`).set(args[0]);
             const servidor = client.servidores.get(message.guild.id);
