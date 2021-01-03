@@ -21,9 +21,7 @@ const bd = admin.firestore();
 const db = admin.database();
 
 //Cargar SFW
-(async function(){
-    
-})();
+require('./sfw').loadsfw(["cry", "clap", "hug"], client);
 
 //cargar las configuraciones en el cliente
 db.ref(`servidores`).once('value').then( snapshot => {
