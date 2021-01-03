@@ -1,6 +1,4 @@
 const {MessageEmbed} = require("discord.js");
-const admin = require('firebase-admin');
-const bd = admin.firestore();
 const package = require('../package.json')
 
 module.exports = {
@@ -8,6 +6,9 @@ module.exports = {
     alias: ["abraza, abrazar, abrazo"],
     run: async (client, message, args) => {
         try {
+            //obtenemos user
+            const user = message.mentions.users.first();
+            if(!user) return message.channel.send("Menciona a alguien");
             //obtenemos el array de hug
             const gifs = client.sfw.get("hug");
             //obtenemos un gif aleatorio
