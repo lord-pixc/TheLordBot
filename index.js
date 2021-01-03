@@ -32,7 +32,7 @@ db.ref(`servidores`).once('value').then( snapshot => {
     //recorremos los server
     for (const servidor in servidores) {
         //creamos las configuraciones
-        const obj = {
+        const obj = { 
             prefix: servidores[servidor].prefix //el prefix
         }
         //cargamos la configuración
