@@ -15,7 +15,7 @@ module.exports = {
             //crear el embed
             const embed = new MessageEmbed()
                 .setColor(0x0041EE)//estalecemos el color
-                .setDescription(`${message.username} llora`)//estalecemos la descripción
+                .setDescription(`${message.member.nickname || message.member.username} llora`)//estalecemos la descripción
                 .setImage(gif)//estalecemos el gif
                 .setAuthor(client.user.username, client.user.avatarURL())//estalecemos el autor
                 .setFooter(`TheLordBot ${package.version}`, client.user.avatarURL());//estalecemos el footer
