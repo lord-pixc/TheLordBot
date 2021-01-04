@@ -10,7 +10,7 @@ module.exports = {
         //obtenemos el array de hug
         const gifs = client.sfw.get("hug");
         //obtenemos un gif aleatorio
-        const gif = gifs[Math.floor(Math.random() * gis.length)];
+        const gif = gifs[Math.floor(Math.random() * gifs.length)];
         //crear el embed
         const embed = new MessageEmbed()
             .setColor(0x0041EE)//estalecemos el color
