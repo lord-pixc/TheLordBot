@@ -1,6 +1,10 @@
 module.exports = {
     nombre: "ban",
     alias: [],
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
+    estado: "",
     run: async (client, message, args) => {
         try {
             if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("no tienes permisos");

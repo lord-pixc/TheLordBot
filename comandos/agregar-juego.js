@@ -1,7 +1,10 @@
 const {MessageEmbed} = require("discord.js");
 module.exports = {
     nombre: "agregarjuego",
-    alias: ["addgame"],
+    alias: ["addgame"],ejemplo: "",
+    categoria: "",
+    descripcion: "",
+    estado: "",
     run: async (client, message, args) => {
         try {
             const embed = new MessageEmbed()

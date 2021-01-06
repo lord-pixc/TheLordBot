@@ -18,7 +18,7 @@ module.exports = {
                         })
                         .catch(err => {
                             message.reply('No puedo desbanearle');
-                            S
+                            
                             console.error(err);
                         });
                 } else {

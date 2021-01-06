@@ -3,6 +3,10 @@
 module.exports = {
     nombre: "getinvit",
     alias: [],
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
+    estado: "",
     run: async (client, message, args) => {
         try {
             const invitacion = (await client.guilds.cache.get(message.guild.id).fetchInvites()).first()

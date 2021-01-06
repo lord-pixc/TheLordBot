@@ -3,6 +3,10 @@ const {MessageEmbed} = require("discord.js");
 module.exports = {
     nombre: "invite",
     alias: ["invitar"],
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
+    estado: "",
     run: async (client, message, args) => {
         try {
             message.channel.send("Puedes invitarme a tu server desde https://cutt.ly/2hUGlED ```Sin miedo al acortador```")

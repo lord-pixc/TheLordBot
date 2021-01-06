@@ -6,6 +6,10 @@ const package = require('../package.json')
 module.exports = {
     nombre: "clap",
     alias: ["aplaudir", "aplauso", "claps"],
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
+    estado: "",
     run: async (client, message, args) => {
         try {
             //obtenemos el array de cry

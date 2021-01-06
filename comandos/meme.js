@@ -3,6 +3,10 @@ const melphiworker = require('melphiworker')
 module.exports = {
     nombre: "meme",
     alias: ["memes"],
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
+    estado: "",
     run: async (client, message, args) => {
         try {
             let memes = await melphiworker.memes()

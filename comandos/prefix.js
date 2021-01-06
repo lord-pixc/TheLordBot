@@ -3,6 +3,10 @@ const db = admin.database();
 module.exports = {
     nombre: "prefix",
     alias: ["prefijo"],
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
+    estado: "",
     run: async (client, message, args) => {
         try {
             console.log("s")

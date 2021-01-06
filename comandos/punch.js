@@ -4,6 +4,10 @@ const sfw = new Zeew.sfw("fbd597f5557800e8912e4fb");
 module.exports = {
     nombre: "punchmantenimiento",
     alias: ['puñetaso'],
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
+    estado: "",
     run: async (client, message, args) => {
         try {
             const user = message.mentions.users.first();

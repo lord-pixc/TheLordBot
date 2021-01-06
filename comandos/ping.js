@@ -1,6 +1,10 @@
 module.exports = {
     nombre: "ping",
     alias: [],
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
+    estado: "",
     run: async (client, message, args) => {
         try {
             message.channel.send("pong!");
