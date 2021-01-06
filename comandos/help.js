@@ -23,11 +23,11 @@ module.exports = {
             let cmd = client.comandos.get(args[0]);
             if(!cmd)return message.channel.send('Ese comando no existe.')
             let nombre = cmd.nombre
-            let alias = cmd.alias.length === 0 ? cmd.alias.join(', ') : 'Ninguno'
-            let ejemplo = cmd.ejemplo.length === 0 ? cmd.ejemplo : 'Ninguno'
-            let categoria = cmd.categoria.length === 0 ? cmd.categoria : "No definida"
-            let descripcion = cmd.descripcion.length === 0 ? cmd.descripcion : 'Ninguna'
-            let estado = cmd.estado.length === 0 ? cmd.estado : 'Desconocido'
+            let alias = cmd.alias.length !== 0 ? cmd.alias.join(', ') : 'Ninguno'
+            let ejemplo = cmd.ejemplo.length !== 0 ? cmd.ejemplo : 'Ninguno'
+            let categoria = cmd.categoria.length !== 0 ? cmd.categoria : "No definida"
+            let descripcion = cmd.descripcion.length !== 0 ? cmd.descripcion : 'Ninguna'
+            let estado = cmd.estado.length !== 0 ? cmd.estado : 'Desconocido'
             const emb = new MessageEmbed()
             .addField('Nombre', nombre)
             .addField('Alias', alias)

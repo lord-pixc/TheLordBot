@@ -6,10 +6,10 @@ const package = require('../package.json')
 module.exports = {
     nombre: "hug",
     alias: ["abraza, abrazar, abrazo"],
-    ejemplo: "",
-    categoria: "",
-    descripcion: "",
-    estado: "",
+    ejemplo: "```tl!hug <usuario>",
+    categoria: "entretenimiento",
+    descripcion: "Dale un abrazo a una persona",
+    estado: "Activo",
     run: async (client, message, args) => {
         try{
             //se obtiene la mención
