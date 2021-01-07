@@ -18,9 +18,9 @@ module.exports = {
                 .addField("Utiles", "invite, ban, kick, ping")
                 .addField("Entretenimiento", "meme")
                 .setAuthor(client.user.username, client.user.avatarURL());
-            message.channel.send(embed);
+                return message.channel.send(embed);
             }
-            let cmd = client.comandos.get(args[0]);
+            let cmd = client.comandos.get(args[0].toLowerCase());
             if(!cmd)return message.channel.send('Ese comando no existe.')
             let nombre = cmd.nombre
             let alias = cmd.alias.length !== 0 ? cmd.alias.join(', ') : 'Ninguno'
