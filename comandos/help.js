@@ -31,7 +31,7 @@ module.exports = {
             const emb = new MessageEmbed()
             .addField('Nombre', nombre)
             .addField('Alias', alias)
-            .addField('Ejemplo', `\`\`\`ejemplo\`\`\``)
+            .addField('Ejemplo', `\`\`\`${ejemplo}\`\`\``)
             .addField('Categoria', categoria)
             .addField('Descripcion', descripcion)
             .addField('Estado', estado)
