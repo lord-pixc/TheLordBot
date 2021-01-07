@@ -9,9 +9,10 @@ module.exports = {
     estado: "",
     run: async (client, message, args) => {
         try {
-            if (!message.guild.me.hasPermission("MANAGE_GUILD")) return message.channel.send("no tengo permisos");
-            const invitacion = (await client.guilds.cache.get(message.channel).createInvite()).first();
-            message.channel.send(`https://discord.gg/${invitacion.code}`)
+            message.guild.channels.cache.filter(m => m.type == "text").random().createInvite({
+                maxAge: 1800, 
+                maxUses: 1 
+              }).then((invite) => {message.channel.send(invite)})
         } catch (error) {
             client.channels.cache.get('795025963406458900').send(`Error en **"getinvit"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
             console.log(error);
