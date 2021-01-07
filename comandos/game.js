@@ -6,10 +6,10 @@ const package = require('../package.json')
 module.exports = {
     nombre: "game",
     alias: ["games", "juegos", "juego"],
-    ejemplo: "",
-    categoria: "",
-    descripcion: "",
-    estado: "",
+    ejemplo: "```game <nombre del juego>````",
+    categoria: "informacion",
+    descripcion: "Describe juegos",
+    estado: "En desarrollo",
     run: async (client, message, args) => {
         try {
             //validar si ingresó un juego

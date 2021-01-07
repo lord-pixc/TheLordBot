@@ -1,10 +1,11 @@
 const {MessageEmbed} = require("discord.js");
 module.exports = {
     nombre: "agregarjuego",
-    alias: ["addgame"],ejemplo: "",
-    categoria: "",
-    descripcion: "",
-    estado: "",
+    alias: ["addgame"],
+    ejemplo: "```addgame```",
+    categoria: "util",
+    descripcion: "Link para agregar juegos al comando ``game``",
+    estado: "Activo",
     run: async (client, message, args) => {
         try {
             const prefix = client.servidores.get(message.guild.id).prefix;

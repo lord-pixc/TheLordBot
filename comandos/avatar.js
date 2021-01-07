@@ -4,10 +4,10 @@ const package = require('../package.json')
 module.exports = {
     nombre: "avatar",
     alias: [],
-    ejemplo: "",
-    categoria: "",
-    descripcion: "",
-    estado: "",
+    ejemplo: "avatar <usuario>",
+    categoria: "informacion",
+    descripcion: "muestra el avatar de la persona solicitada",
+    estado: "Activo",
     run: async (client, message, args) => {
         try {
             let user = message.mentions.users.first();

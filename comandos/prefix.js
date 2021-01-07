@@ -3,13 +3,14 @@ const db = admin.database();
 module.exports = {
     nombre: "prefix",
     alias: ["prefijo"],
-    ejemplo: "",
-    categoria: "",
-    descripcion: "",
-    estado: "",
+    ejemplo: "```prefix <nuevo prefix```>",
+    categoria: "utiles",
+    descripcion: "Cambia el prefix en tu server",
+    estado: "Activo",
     run: async (client, message, args) => {
         try {
             console.log("s")
+            if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("no tienes permisos");
             if (!args[0]) return message.channel.send("Incluya el nuevo prefijo");
             db.ref(`servidores/${message.guild.id}/prefix`).set(args[0]);
             const servidor = client.servidores.get(message.guild.id);

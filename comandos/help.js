@@ -3,10 +3,10 @@ const {MessageEmbed} = require("discord.js");
 module.exports = {
     nombre: "help",
     alias: ["ayuda"],
-    ejemplo: "",
-    categoria: "",
-    descripcion: "",
-    estado: "",
+    ejemplo: "```help <comando del bot>",
+    categoria: "utiles",
+    descripcion: "muestra infomacion de comandos",
+    estado: "En desarrollo",
     run: async (client, message, args) => {
         try {
             if(!args[0]){

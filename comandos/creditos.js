@@ -3,18 +3,16 @@ const {MessageEmbed} = require("discord.js");
 module.exports = {
     nombre: "creditos",
     alias: ["credits"],
-    ejemplo: "",
-    categoria: "",
-    descripcion: "",
-    estado: "",
+    ejemplo: "```creditos```",
+    categoria: "infomacion",
+    descripcion: "Muestra los mis creadores",
+    estado: "Activo",
     run: async (client, message, args) => {
         try {
             const embed = new MessageEmbed()
-                .setTitle("Comandos")
                 .setColor(0x5E9DE4)
-                .setDescription("Todos los comandos deben llevar el prefix 'tl!'")
-                .addField("Dueños", "LORDPIXC")
-                .addField("Colaboradores", "Toastcode, Eli Maciel, Mr.Bug ")
+                .addField("Dueños", "LORDPIXC, Eli Maciel")
+                .addField("Colaboradores", "Toastcode, Mr.Bug")
                 .setAuthor(client.user.username, client.user.avatarURL());
             message.channel.send(embed);
         } catch (error) {
