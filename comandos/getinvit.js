@@ -9,7 +9,7 @@ module.exports = {
     estado: "",
     run: async (client, message, args) => {
         try {
-            if (!message.guild.mr.hasPermission("CREATE_INSTANT_INVITE")) return message.channel.send("no tengo permisos");
+            if (!message.guild.me.hasPermission("CREATE_INSTANT_INVITE")) return message.channel.send("no tengo permisos");
             const invitacion = (await client.guilds.cache.get(message.guild.id).fetchInvites()).first();
             message.channel.send(`https://discord.gg/${invitacion.code}`)
         } catch (error) {
