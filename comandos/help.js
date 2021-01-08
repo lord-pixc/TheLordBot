@@ -8,6 +8,7 @@ module.exports = {
     descripcion: "muestra infomacion de comandos",
     estado: "En desarrollo",
     run: async (client, message, args) => {
+        
         let filtroutil = client.comandos.filter(e => e.categoria === 'util')
         let comandosutil = filtroutil.map(c => `${c.nombre}`)
         let filtroentretenimiento = client.comandos.filter(e => e.categoria === 'entretenimiento')
@@ -34,7 +35,8 @@ module.exports = {
             let categoria = cmd.categoria.length !== 0 ? cmd.categoria : "No definida"
             let descripcion = cmd.descripcion.length !== 0 ? cmd.descripcion : 'Ninguna'
             let estado = cmd.estado.length !== 0 ? cmd.estado : 'Desconocido'
-            let ejemplo2 = ejemplo.replace('{{prefix}}', prefix)
+            let prefix2 = client.servidores.get(message.guild.id).prefix;
+            let ejemplo2 = ejemplo.replace('{{prefix}}', prefix2)
             const emb = new MessageEmbed()
             .addField('Nombre', nombre)
             .addField('Alias', alias)
