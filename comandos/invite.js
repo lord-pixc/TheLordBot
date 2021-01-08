@@ -4,7 +4,7 @@ module.exports = {
     nombre: "invite",
     alias: ["invitar"],
     ejemplo: "",
-    categoria: "",
+    categoria: "util",
     descripcion: "",
     estado: "",
     run: async (client, message, args) => {

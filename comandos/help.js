@@ -4,10 +4,12 @@ module.exports = {
     nombre: "help",
     alias: ["ayuda"],
     ejemplo: "```help <comando del bot>",
-    categoria: "utiles",
+    categoria: "util",
     descripcion: "muestra infomacion de comandos",
     estado: "En desarrollo",
     run: async (client, message, args) => {
+        let filtroutil = client.comandos.filter(e => e.categoria === 'util')
+        let comandosutil = filtroutil.map(c => `${c.nombre}`)
         try {
             if(!args[0]){
                 const prefix = client.servidores.get(message.guild.id).prefix;
@@ -15,7 +17,7 @@ module.exports = {
                 .setTitle("Comandos")
                 .setColor(0x5E9DE4)
                 .addField("Informacion", "Info, creditos, afiliados, avatar,  servers, game")
-                .addField("Utiles", "invite, ban, kick, ping")
+                .addField("Utiles", `${comandosutil.join(', ')}`)
                 .addField("Entretenimiento", "meme")
                 .setAuthor(client.user.username, client.user.avatarURL());
                 return message.channel.send(embed);

@@ -4,7 +4,7 @@ module.exports = {
     nombre: "getinvit",
     alias: [],
     ejemplo: "",
-    categoria: "",
+    categoria: "util",
     descripcion: "",
     estado: "",
     run: async (client, message, args) => {

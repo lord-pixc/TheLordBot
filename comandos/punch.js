@@ -5,7 +5,7 @@ module.exports = {
     nombre: "punchmantenimiento",
     alias: ['puñetaso'],
     ejemplo: "",
-    categoria: "",
+    categoria: "entretenimiento",
     descripcion: "",
     estado: "",
     run: async (client, message, args) => {

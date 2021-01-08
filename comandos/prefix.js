@@ -4,7 +4,7 @@ module.exports = {
     nombre: "prefix",
     alias: ["prefijo"],
     ejemplo: "```prefix <nuevo prefix```>",
-    categoria: "utiles",
+    categoria: "util",
     descripcion: "Cambia el prefix en tu server",
     estado: "Activo",
     run: async (client, message, args) => {

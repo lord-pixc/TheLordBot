@@ -4,7 +4,7 @@ module.exports = {
     nombre: "meme",
     alias: ["memes"],
     ejemplo: "",
-    categoria: "",
+    categoria: "entretenimiento",
     descripcion: "",
     estado: "",
     run: async (client, message, args) => {

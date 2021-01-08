@@ -5,7 +5,7 @@ module.exports = {
     ejemplo: "```addgame```",
     categoria: "util",
     descripcion: "Link para agregar juegos al comando ``game``",
-    estado: "Activo",
+    estado: "En desarrollo",
     run: async (client, message, args) => {
         try {
             const prefix = client.servidores.get(message.guild.id).prefix;

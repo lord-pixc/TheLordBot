@@ -2,7 +2,7 @@ module.exports = {
     nombre: "ping",
     alias: [],
     ejemplo: "",
-    categoria: "",
+    categoria: "util",
     descripcion: "",
     estado: "",
     run: async (client, message, args) => {

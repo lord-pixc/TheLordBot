@@ -2,7 +2,7 @@ module.exports = {
     nombre: "kick",
     alias: [],
     ejemplo: "",
-    categoria: "",
+    categoria: "util",
     descripcion: "",
     estado: "",
     run: async (client, message, args) => {
