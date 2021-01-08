@@ -1,6 +1,11 @@
 module.exports = {
     nombre: 'servers',
     alias: [],
+    uso: "",
+    estado: "",
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
     run: async (client, message, args) => {
         try {
             let servidores = client.guilds.cache.size;

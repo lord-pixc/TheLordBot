@@ -6,7 +6,8 @@ const package = require('../package.json')
 module.exports = {
     nombre: "hug",
     alias: ["abraza, abrazar, abrazo"],
-    ejemplo: "```tl!hug <usuario>",
+    uso: "{{prefix}}tl!hug <usuario>",
+    ejemplo: "{{prefix}}hug @TheLord",
     categoria: "entretenimiento",
     descripcion: "Dale un abrazo a una persona",
     estado: "Activo",

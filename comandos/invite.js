@@ -4,6 +4,7 @@ module.exports = {
     nombre: "invite",
     alias: ["invitar"],
     ejemplo: "",
+    uso: "",
     categoria: "",
     descripcion: "",
     estado: "",

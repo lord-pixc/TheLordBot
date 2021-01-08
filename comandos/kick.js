@@ -1,6 +1,7 @@
 module.exports = {
     nombre: "kick",
     alias: [],
+    uso: "",
     ejemplo: "",
     categoria: "",
     descripcion: "",

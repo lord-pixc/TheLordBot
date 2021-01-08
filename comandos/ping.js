@@ -1,6 +1,7 @@
 module.exports = {
     nombre: "ping",
     alias: [],
+    uso: "",
     ejemplo: "",
     categoria: "",
     descripcion: "",

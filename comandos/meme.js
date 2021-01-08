@@ -3,6 +3,7 @@ const melphiworker = require('melphiworker')
 module.exports = {
     nombre: "meme",
     alias: ["memes"],
+    uso: "",
     ejemplo: "",
     categoria: "",
     descripcion: "",

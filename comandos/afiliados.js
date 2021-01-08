@@ -3,6 +3,11 @@ const {MessageEmbed} = require("discord.js");
 module.exports = {
     nombre: "afiliados",
     alias: [],
+    uso: "",
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
+    estado: "",
     run: async (client, message, args) => {
         try {
             const embed = new MessageEmbed()

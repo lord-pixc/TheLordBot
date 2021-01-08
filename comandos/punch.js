@@ -5,6 +5,7 @@ module.exports = {
     nombre: "punchmantenimiento",
     alias: ['puñetaso'],
     ejemplo: "",
+    uso: "",
     categoria: "",
     descripcion: "",
     estado: "",

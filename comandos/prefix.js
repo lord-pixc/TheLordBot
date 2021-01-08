@@ -3,7 +3,8 @@ const db = admin.database();
 module.exports = {
     nombre: "prefix",
     alias: ["prefijo"],
-    ejemplo: "```prefix <nuevo prefix```>",
+    ejemplo: "{{prefix}}prefix t!",
+    uso: "{{prefix}}prefix <nuevo prefix>",
     categoria: "utiles",
     descripcion: "Cambia el prefix en tu server",
     estado: "Activo",

@@ -3,6 +3,7 @@
 module.exports = {
     nombre: "getinvit",
     alias: [],
+    uso: "",
     ejemplo: "",
     categoria: "",
     descripcion: "",

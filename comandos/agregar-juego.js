@@ -2,7 +2,8 @@ const {MessageEmbed} = require("discord.js");
 module.exports = {
     nombre: "agregarjuego",
     alias: ["addgame"],
-    ejemplo: "```addgame```",
+    uso: "{{prefix}}addgame",
+    ejemplo: "{{prefix}}addgame",
     categoria: "util",
     descripcion: "Link para agregar juegos al comando ``game``",
     estado: "Activo",

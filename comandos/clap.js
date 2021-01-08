@@ -6,7 +6,8 @@ const package = require('../package.json')
 module.exports = {
     nombre: "clap",
     alias: ["aplaudir", "aplauso", "claps"],
-    ejemplo: "```clap```",
+    uso: "{{prefix}}clap",
+    ejemplo: "{{prefix}}clap",
     categoria: "entretenimiento",
     descripcion: "Aplaudes",
     estado: "Activo",

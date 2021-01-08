@@ -3,7 +3,8 @@ const {MessageEmbed} = require("discord.js");
 module.exports = {
     nombre: "creditos",
     alias: ["credits"],
-    ejemplo: "```creditos```",
+    uso: "{{prefix}}crefitos"
+    ejemplo: "{{prefix}}creditos",
     categoria: "infomacion",
     descripcion: "Muestra los mis creadores",
     estado: "Activo",
