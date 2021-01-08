@@ -6,7 +6,8 @@ const package = require('../package.json')
 module.exports = {
     nombre: "game",
     alias: ["games", "juegos", "juego"],
-    ejemplo: "```game <nombre del juego>````",
+    ejemplo: "{{prefix}}game minecraft",
+    uso: "{{prefix}}game [nombre del juego]",
     categoria: "informacion",
     descripcion: "Describe juegos",
     estado: "En desarrollo",

@@ -2,7 +2,7 @@ module.exports = {
     nombre: "ban",
     alias: [],
     ejemplo: "",
-    categoria: "moderacion",
+    categoria: "util",
     descripcion: "",
     estado: "",
     run: async (client, message, args) => {

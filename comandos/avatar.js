@@ -5,6 +5,7 @@ module.exports = {
     nombre: "avatar",
     alias: [],
     ejemplo: "```avatar <usuario>```",
+    ejemplo: "{{prefix}}avatar @TheLord>",
     categoria: "informacion",
     descripcion: "muestra el avatar de la persona solicitada",
     estado: "Activo",

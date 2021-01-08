@@ -17,7 +17,7 @@ module.exports = {
                 .setTitle("Comandos")
                 .setColor(0x5E9DE4)
                 .addField("Informacion", "Info, creditos, afiliados, avatar,  servers, game")
-                .addField("Utiles", `${comandosutil.join(', ')}`)
+                .addField("Utiles", `${comandosutil.join(',')}`)
                 .addField("Entretenimiento", "meme")
                 .setAuthor(client.user.username, client.user.avatarURL());
                 return message.channel.send(embed);

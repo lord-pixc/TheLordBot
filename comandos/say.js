@@ -1,6 +1,10 @@
 module.exports = {
     nombre: "say",
     alias: [],
+    estado: "",
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
     run: async (client, message, args) => {
         try {
             //eliminamos el mensaje

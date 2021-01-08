@@ -3,6 +3,10 @@
 module.exports = {
     nombre: "sfwreload",
     alias: ["reloadsfw"],
+    estado: "",
+    ejemplo: "",
+    categoria: "",
+    descripcion: "",
     run: async (client, message, args) => {
         try {
             if(![""].includes(message.author.id)) return;
