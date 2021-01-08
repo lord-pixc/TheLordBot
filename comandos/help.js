@@ -10,15 +10,19 @@ module.exports = {
     run: async (client, message, args) => {
         let filtroutil = client.comandos.filter(e => e.categoria === 'util')
         let comandosutil = filtroutil.map(c => `${c.nombre}`)
+        let filtroentretenimiento = client.comandos.filter(e => e.categoria === 'entretenimiento')
+        let comandosentretenimiento = filtroentretenimiento.map(c => `${c.nombre}`)
+        let filtroinformacion = client.comandos.filter(e => e.categoria === 'informacion')
+        let comandosinformacion = filtroinformacion.map(c => `${c.nombre}`)
         try {
             if(!args[0]){
                 const prefix = client.servidores.get(message.guild.id).prefix;
             const embed = new MessageEmbed()
                 .setTitle("Comandos")
                 .setColor(0x5E9DE4)
-                .addField("Informacion", "Info, creditos, afiliados, avatar,  servers, game")
-                .addField("Utiles", `${comandosutil.join(',')}`)
-                .addField("Entretenimiento", "meme")
+                .addField("Informacion", `${comandosinformacion.join(', ')}`)
+                .addField("Utiles", `${comandosutil.join(', ')}`)
+                .addField("Entretenimiento", `${comandosentretenimiento.join(', ')}`)
                 .setAuthor(client.user.username, client.user.avatarURL());
                 return message.channel.send(embed);
             }
@@ -30,10 +34,11 @@ module.exports = {
             let categoria = cmd.categoria.length !== 0 ? cmd.categoria : "No definida"
             let descripcion = cmd.descripcion.length !== 0 ? cmd.descripcion : 'Ninguna'
             let estado = cmd.estado.length !== 0 ? cmd.estado : 'Desconocido'
+            let ejemplo2 = ejemplo.replace('{{prefix}}', prefix)
             const emb = new MessageEmbed()
             .addField('Nombre', nombre)
             .addField('Alias', alias)
-            .addField('Ejemplo', `\`\`\`${ejemplo}\`\`\``)
+            .addField('Ejemplo', `\`\`\`${ejemplo2}\`\`\``)
             .addField('Categoria', categoria)
             .addField('Descripcion', descripcion)
             .addField('Estado', estado)
