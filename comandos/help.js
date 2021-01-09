@@ -34,7 +34,7 @@ module.exports = {
             let categoria = cmd.categoria.length !== 0 ? cmd.categoria : "No definida"
             let descripcion = cmd.descripcion.length !== 0 ? cmd.descripcion : 'Ninguna'
             let estado = cmd.estado.length !== 0 ? cmd.estado : 'Desconocido'
-            let ejemplo = ejemplo.replace('{{prefix}}', prefix)
+            let ejemplo = cmd.ejemplo.replace('{{prefix}}', prefix)
             const emb = new MessageEmbed()
             .addField('Nombre', nombre)
             .addField('Alias', alias)
