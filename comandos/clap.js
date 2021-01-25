@@ -14,7 +14,8 @@ module.exports = {
     run: async (client, message, args) => {
         try {
             //obtenemos el array de cry
-            const gifs = client.sfw.get("claps");
+            const gifs = await client.sfw.get("claps");
+            if(!gifs) return;
             //obtenemos un gif aleatorio
             const gif = gifs[Math.floor(Math.random() * gifs.length)];
             //crear el embed

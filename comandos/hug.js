@@ -12,11 +12,12 @@ module.exports = {
     estado: "Activo",
     run: async (client, message, args) => {
         try{
+            //obtenemos el array de hug
+            const gifs = client.sfw.get("hug");
+            if(!gifs) return;
             //se obtiene la mención
             const user = message.mentions.users.first()
             if (!user) return message.channel.send("Debes mencionar a alguien")
-            //obtenemos el array de hug
-            const gifs = client.sfw.get("hug");
             //obtenemos un gif aleatorio
             const gif = gifs[Math.floor(Math.random() * gifs.length)];
             //crear el embed
