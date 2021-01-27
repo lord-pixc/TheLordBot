@@ -14,6 +14,7 @@ module.exports = {
         try {
 //obtenemos el array de cry
             const gifs = client.sfw.get("cry");
+            if(!gifs) return;
             //obtenemos un gif aleatorio
             const gif = gifs[Math.floor(Math.random() * gifs.length)];
             //crear el embed
