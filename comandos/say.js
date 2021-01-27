@@ -10,7 +10,7 @@ module.exports = {
             //eliminamos el mensaje
             message.delete();
             //comprobamos que halla escrito texto
-            if (!args[0]) return message.channel.send("Tambien escribe lo que quieres que diga").then(m => m.delete({timeout: 5000}));
+            if (!args[0]) return message.channel.send("<:desactivado:749301171713212496> Tambien escribe lo que quieres que diga").then(m => m.delete({timeout: 5000}));
             //creamos un muevo texto con .map para validar palabra por palabra
             const texto = args.map(p => {
                 //si es admin no importará si tenga mención

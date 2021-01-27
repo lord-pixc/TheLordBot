@@ -18,9 +18,9 @@ module.exports = {
             const prefix = client.servidores.get(message.guild.id).prefix;
             if(!args[0]){
             const embed = new MessageEmbed()
-                .setTitle("Comandos")
+                .setTitle("Comandos ")
                 .setColor(0x5E9DE4)
-                .addField("Informacion", `${comandosinformacion.join(', ')}`)
+                .addField("Informacion", `${comandosinformacion.join(', ')} :sincopeso_facha:`)
                 .addField("Utiles", `${comandosutil.join(', ')}`)
                 .addField("Entretenimiento", `${comandosentretenimiento.join(', ')}`)
                 .setAuthor(client.user.username, client.user.avatarURL());

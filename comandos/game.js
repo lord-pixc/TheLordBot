@@ -7,7 +7,6 @@ module.exports = {
     nombre: "game",
     alias: ["games", "juegos", "juego"],
     ejemplo: "{{prefix}}game minecraft",
-    uso: "{{prefix}}game [nombre del juego]",
     categoria: "informacion",
     descripcion: "Describe juegos",
     estado: "En desarrollo",

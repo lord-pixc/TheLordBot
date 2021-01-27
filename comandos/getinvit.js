@@ -3,7 +3,6 @@
 module.exports = {
     nombre: "getinvit",
     alias: [],
-
     ejemplo: "",
     categoria: "util",
     descripcion: "",
@@ -14,7 +13,7 @@ module.exports = {
                 maxAge: 1800, // maximum time for the invite, in milliseconds
                 maxUses: 1 // maximum times it can be used
               })
-              if(codigo === undefined) return message.channel.send("Ups, parece que ocurrió un error. Intenta nuevamente") 
+              if(codigo === undefined) return message.channel.send("<:desactivado:749301171713212496> Ups, parece que ocurrió un error. Intenta nuevamente") 
         } catch (error) {
             client.channels.cache.get('795025963406458900').send(`Error en **"getinvit"** <@&795025257157230643>\n${error.toString()}\nMensaje: ${message.content}\nCanal: <#${message.channel.id}>\nServidor ${message.guild.name} / ${message.guild.id}`);
             console.log(error);

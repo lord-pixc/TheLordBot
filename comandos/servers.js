@@ -1,7 +1,6 @@
 module.exports = {
     nombre: 'servers',
     alias: [],
-    uso: "",
     estado: "",
     ejemplo: "",
     categoria: "",

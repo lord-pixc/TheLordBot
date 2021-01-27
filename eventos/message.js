@@ -11,7 +11,7 @@ module.exports = {
             if(!client.servidores.get(message.guild.id)){
                 // creamos la configuración inicial por defecto
                 config = {
-                    prefix: "tl!",
+                    prefix: ">",
                     name: message.guild.name
                 };
                 // lo registramos en la base de datos
