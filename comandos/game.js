@@ -27,7 +27,7 @@ module.exports = {
                 .addField("Desarrollado", consulta.val().desarrolladora, true)
                 .addField("Plataformas", consulta.val().plataforma, true)
                 .addField("Fecha", consulta.val().fecha, true)
-                .addField("Subido por", consulta.val().usuario.nombre, true)
+                .addField("Subido por", consulta.val().usuario?.nombre?? "el sistema", true)
                 .setThumbnail(consulta.val().imagen)
                 .setImage(consulta.val().captura)
                 .setAuthor(client.user.username, client.user.avatarURL())
