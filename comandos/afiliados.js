@@ -1,7 +1,7 @@
 const {MessageEmbed} = require("discord.js");
 
 module.exports = {
-    nombre: "afiliados",
+    nombre: "",
     alias: [],
     uso: "",
     ejemplo: "",
@@ -14,11 +14,11 @@ module.exports = {
                 .setTitle("Afiliados")
                 .setColor(0x5E9DE4)
                 .setDescription("Todos lo serers afiliados tienen un comando propio donde si ejecutas ```tl!afiliados (code del server afiliados)``` te saltara su invitacion")
-                .addField("Afiliados", "1- Jabberwock server-CODE:001")
+                .addField("Afiliados", "")
                 .setAuthor(client.user.username, client.user.avatarURL());
             if (!args[0]) return message.channel.send(embed);
             let invitacion;
-            if (args[0] === '001') {
+            if (args[0] === '000') {
                 invitacion = (await client.guilds.cache.get("755715986229035068").fetchInvites()).first();
             }
             const afiliado = new MessageEmbed();
