@@ -7,7 +7,7 @@ module.exports = {
     estado: "",
     run: async (client, message, args) => {
         try {
-            if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("no tienes permisos");
+            
             if (!message.guild) return;
             const user = message.mentions.users.first();
             if (user) {
