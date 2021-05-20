@@ -8,7 +8,6 @@ module.exports = {
     run: async (client, message, args) => {
         try {
             
-            if (!message.guild) return;
             const user = message.mentions.users.first();
             if (user) {
                 const member = message.guild.member(user);
